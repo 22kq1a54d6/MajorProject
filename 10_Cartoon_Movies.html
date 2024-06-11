@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>homepage
+    </title>
+    <style>
+        body{
+            background-color: #020202;
+        }
+        header{
+          width: auto;
+          height: 500px;
+          padding: 20px;
+        }
+        section{
+            padding: 20px;
+            background-color: black;
+            margin-top: 20px;
+        }
+        /* CSS for styling the menu */
+        ul {
+            background-color: #020202;
+            font-size: larger;
+            list-style-type: none;
+            margin: 0;
+            padding: 30;
+            padding-left: 20;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: rgb(255, 251, 251);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .container{
+            padding: 20px;
+            padding-top: 500px;
+            border: 1px solid #000;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+        }
+        .container1{
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 15px;
+        }
+        .container1 img{
+            max-width: 15%;
+            height:auto;
+        }
+        @media screen and (max-width:550px){
+            ul li img{
+               width: 300px;
+               height: auto;
+            }
+        }
+    </style>
+    <script>
+        function openPage(url){
+            window.open(url,'_blank');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <ul>
+        <li><img src="netflixlg.jpg" alt="not found" width="100px" height="60px"></li>
+        <li><a href="8_Kids_page.html"> Home</a> </li>
+        <li><a href="9_Cartoonseries.html">Cartoon series</a> </li>
+        <li><br></li>
+        <li><a href="#">Movies</a></li>
+        <li><br></li>
+        <li><a href="#">Mylist</a></li>
+        <li><a href="#">Browsebylanguage</a></li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+        <li style="font-size: larger;"> <a href="#"><i class="fa fa-fw fa-search"></i></a> </li>
+        <li>
+        <a href="4_netfilx_choosePage.html">
+        <img src="choo.jpg" class="img-rounded" alt="not found" width="30px" height="30px">
+        </a>
+        </li>
+        <li style="align-content: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="main_km.jpg"alt="not found" onclick="openPage('main_km_page.html')" width="800px" height="auto"><br></li>
+    </p>
+    </ul>
+    <br>
+    <br>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+   <section>
+    <div class="container"><br>
+        Recommended
+    </div><br>
+    <div class="container1">
+
+        <img src="km1.jpg" alt="image not found" onclick="openPage('kidmovie1_page.html')" widht="200" height="175">
+        <img src="km2.jpg" alt="image not found" onclick="openPage('movie1_page.html')"widht="200" height="175">
+        <img src="km3.jpg" alt="image not found" onclick="openPage('movie2_page.html')"widht="200" height="175">
+        <img src="km4.jpg" alt="image not found" onclick="openPage('movie3_page.html')"widht="200" height="175">
+        <img src="km5.jpg" alt="image not found" onclick="openPage('movie4_page.html')"widht="200" height="175">
+        <img src="km7.jpg" alt="image not found" onclick="openPage('movie5_page.html')"widht="200" height="175">
+    </div><br>
+   </section>
+</body>
+</html>
+<html>
+    <head>
+        <style>
+             .container{
+            padding: 5px;
+            border: 1px solid #000;
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .container1{
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 15px;
+        }
+        .container1 img{
+            max-width: 20%;
+            height:auto;
+        }
+        </style>
+          <script>
+            function openPage(url){
+                window.open(url,'_blank');
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            Popular
+        </div><br>
+        <div class="container1">
+            <img src="km8.jpg" alt="image not found" onclick="openPage('movie9_page.html')"widht="200" height="175">
+            <img src="kidmovie11.jpg" alt="image not found" onclick="openPage('movie9_page.html')"widht="200" height="175">
+            <img src="km10.jpg" alt="image not found" onclick="openPage('movie10_page.html')"widht="200" height="175">
+            <img src="km11.jpg" alt="image not found" onclick="openPage('movie13_page.html')"widht="200" height="175">
+            <img src="km12.jpg" alt="image not found" onclick="openPage()" widht="200" height="175">
+            <img src="km13.jpeg" alt="image not found" onclick="openPage()"widht="200" height="175">
+        </div><br>
+        <div class="container">
+           Only on Netfilx
+        </div><br>
+        <div class="container1">
+            <img src="km14.jpg" alt="image not found" onclick="openPage('drama1_page.html')" widht="200" height="175">
+            <img src="km15.jpg" alt="image not found" onclick="loadpage()"widht="200" height="175">
+            <img src="km16.jpg" alt="image not found" onclick="loadpage()"widht="200" height="175">
+            <img src="kidmovie17.webp" alt="image not found" onclick="loadpage()"widht="200" height="175">
+            <img src="km18.jpg" alt="image not found" onclick="loadpage()"widht="400" height="175">
+            <img src="km19.jpg" alt="image not found" onclick="loadpage()"widht="200" height="175">
+           
+        </div><br>
+        <div class="container">
+          New 
+        </div><br>
+        <div class="container1">
+            <img src="kidmovie22.jpg" alt="image not found" onclick="openPage()"widht="200" height="175">
+            <img src="kidmovie23.jpg" alt="image not found" onclick="openPage('movie6_page.html')"widht="200" height="175">
+            <img src="kidmovie16.jpg" alt="image not found" onclick="openPage()"widht="200" height="175">
+            <img src="km13.jpg" alt="image not found" onclick="loadpage()"widht="200" height="175">      
+            <img src="km20.jpg" alt="image not found" onclick="loadpage()"widht="200" height="175">
+            <img src="km21.jpg" alt="image not found" onclick="loadpage()"widht="200" height="175">
+        </div><br>
+    </body>
+</html>

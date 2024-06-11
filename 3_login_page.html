@@ -1,0 +1,85 @@
+<html>
+    <head>
+    <title>login  page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function loginvalidation(){ 
+        var unsername=document.myform.uname.value;
+        var password=document.myform.ps.value;
+        var x =document.getElementById("check");
+        x.checked=true;
+        if(unsername==null||unsername==""){
+            alert("Enter unsername");
+            return false;
+        } else if(password==null||password==""){
+            alert("Enter your password");
+            return false;
+        } 
+        return true;
+    }
+    </script>
+    <style>
+        body{ 
+         background-image: url(image.png) ;background-size: cover; 
+        } 
+        header{
+            width: auto;
+            height: auto;
+            padding: 20;
+        }
+        div{
+            background-color: rgba(15, 13, 13, 0.9);
+            padding-top: 30px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 20px;
+            width: 250px;
+            height: 350px;
+        }  @media screen and (max-width:550px){
+
+           body {
+               background: none;
+               background-color: black;
+                }
+            div{
+             background-color: rgba(67, 60, 60, 0.9);
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 30px;
+            width: 250px;
+            height: 350px;
+            color: black;
+            }
+            header img{
+            width: 400px;
+            height: auto;
+            }
+        }        
+    </style>
+    </head>
+    <body>
+        <header>
+            <img src="netflixlg.jpg" alt="not found" width="80px" height="50px">
+        </header>
+        <section>
+            <center>
+            <div>
+            <form name="myform" action="4_netfilx_choosePage.html" onsubmit="return loginvalidation(this)">
+            <h1 style="text-align-last: left;color: azure;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;padding-left: 20px;padding-top: 20px;">SignIn</h1>
+       
+           <input type="text" name="uname"placeholder=username><br>
+        <br>
+           <input type="password" name="pasw" id="ps"placeholder=password><br>
+        <br>
+        <p style="color: rgb(248, 246, 244);font-size: small;text-align: left;">
+        <input type="checkbox" id="check">Rememberme &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="2_forgot_passwordpage.html"> forgotpassword?</a></p>
+         <button type="submit" class="btn btn-danger">SignIn</button>
+        </form>    
+    </div>
+    </center>
+        </section>
+    </body>
+</html>
