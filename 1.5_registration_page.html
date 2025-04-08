@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        async function registerUser(event) {
+            event.preventDefault(); // Prevent default form submission
+            const username = document.getElementById("registerUsername").value;
+            const password = document.getElementById("registerPassword").value;
+            const response = await fetch("http://127.0.0.1:5000/register", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ username, password }),
+            });
+            const result = await response.json();
+            if (result.success) {
+                alert("Registration successful! Redirecting to login...");
+                window.location.href = "4_netflix_choosePage.html"; // Redirect to login page
+            } else {
+                alert("Error: " + result.message);
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            color: rgb(250, 250, 250);
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .form-container {
+            align-content: center;
+            background-color: rgba(94, 89, 89, 0.4);
+            padding: 40px;
+            width: 300px;
+            margin: 100px auto;
+            border-radius: 10px;
+        }
+        input { width: 100%; padding: 10px; margin: 10px 0; color: black; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="netflixlg.jpg" alt="not found" width="200px" height="100px">
+    </header>
+    <div class="form-container">
+        <h1>Register</h1>
+        <form id="register" action="4_netfilx_choosePage.html" onsubmit="registerUser(event)">
+            <input type="text" id="registerUsername" placeholder="Username"><br><br>
+            <input type="password" id="registerPassword" placeholder="Password"><br><br>
+            <button type="submit" class="btn btn-success">Register</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='3_login_page.html'">Sign In</button>
+        </form>
+    </div>
+</body>
+</html>
